@@ -3,6 +3,7 @@
 .idea/misc.xml
 .idea/modules.xml
 .idea/workspace.xml
+venv/
 geckodriver
 geckodriver.log
 terminal_log
@@ -10,3 +11,7 @@ tests/__init__.py
 tests/wdclient.py
 client.py
 .idea/vcs.xml
+geckodriver-v0.20.1-win32.zip
+geckodriver-v0.20.1-win64.zip
+venv/Lib/site-packages/easy-install.pth
+geckodriver.exe

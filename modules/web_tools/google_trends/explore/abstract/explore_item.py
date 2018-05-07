@@ -5,10 +5,22 @@ from modules.web_tools.google_trends.tools.geo import Geo
 
 
 class AbstractExploreItem(Geo):
+
+    """
+     = > Abstração de classe para itens que devem ser buscados no Trends
+    """
+
     __metaclass__ = ABCMeta
 
+    # = A Keyword deve ser o item que vai ser pesquisado, ex.: Carros
+    # = A Keyword também pode ser o código de um item, por exemplo "BMW", relacionada a "Fabricante de Automóveis"
+    # = tem o código: /m/017yh
+    # = Você pode obter os códigos em tools.autocomplete, lá você poderá pesquisar um item e obter o mesmo com seu
+    # = código relacionado a determinada categoria.
     __keyword = ""
+
     __geo = "BR"
+
     __time = "now 1-H"
 
     @property
@@ -42,7 +54,11 @@ class AbstractExploreItem(Geo):
 
     @property
     @abstractmethod
-    def _item_dict(self):
+    def _item_dict(self) -> dict:
+        """
+         = > Esta função já retorna o dict na forma que deve ser enviado aos servidores do Google.
+        :return: dict
+        """
         return {
             "keyword": self.keyword,
             "geo": self.geo,

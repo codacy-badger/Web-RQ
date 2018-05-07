@@ -28,4 +28,4 @@ DEFAULT_DRIVER = 'geckodriver'
 """
     # Se tiver com problemas no download do driver, preencha as variaveis abaixo
 """
-FORCE_SYSTEM_BITS = None  # Quantos bytes seu S.O usa? | Valor padrao: None
+FORCE_SYSTEM_BITS = 64  # Quantos bytes seu S.O usa? | Valor padrao: None

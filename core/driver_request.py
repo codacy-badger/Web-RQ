@@ -35,6 +35,7 @@ class DriverRequest(object):
         from tools.system_architeture import SystemArchiteture
         extension = '.exe' if SystemArchiteture.get_operational_system() == 'WindowsPE' else ''
         fname = driver+"{0}".format(extension)
+
         path = dirname(abspath(sys.argv[0]))+'/{0}'.format(fname)
 
         if driver == 'geckodriver':
