@@ -2,7 +2,7 @@ from modules.web_tools.google_trends.insights.abstract.latest import AbstractLat
 
 
 class Latest(AbstractLatest):
-
+    # TODO: Preciso adicionar algo para definir as constantes de categorias, pois as mesmas não valem para o tools\categories.py.
     def get_latest(self) -> dict:
         from modules.web_tools.google_trends.tools.url_setter import UrlSetter
         from modules.web_tools.google_trends.tools.fix import Fix
