@@ -1,0 +1,12 @@
+                                                                                                              12/04/2018
+                                                                                                Henrique da Silva Santos
+                                                                                                Linhares, Espirito Santo
+
+[@ Selenium Bot Exploit]
+    * HELPER
+
+    1. O que é um helper?
+        Um helper nada mais é do que uma pasta personalizada (não obrigatória) para uso facilitado do módulo, contendo
+        funções para uso específico de pequenas partes do módulo em sí.
+        Por exemplo: No facebook podemos obter diversas coisas, como: Dados de página, perfil, posts, buscas, mapas,
+        documentos, etc...

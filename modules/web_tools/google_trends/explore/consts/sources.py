@@ -1,0 +1,5 @@
+NEWS = "news"
+WEB = ""
+IMAGES = "images"
+GOOGLE_SHOPPING = "froogle"
+YOUTUBE = "youtube"

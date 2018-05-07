@@ -1,0 +1,12 @@
+
+.idea/1.0.0.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+geckodriver
+geckodriver.log
+terminal_log
+tests/__init__.py
+tests/wdclient.py
+client.py
+.idea/vcs.xml

@@ -1,0 +1,38 @@
+                                                                                                              12/04/2018
+                                                                                                Henrique da Silva Santos
+                                                                                                Linhares, Espirito Santo
+
+[@ Selenium Bot Exploit]
+    * ESTRUTURA DE MÓDULO
+
+    1. O que é um módulo?
+        Para o BOT, o módulo é um grupo de ações que devem ser seguidas para alcançar determinado resultado, entenda-o
+        como um mapa, onde o BOT deve saber se localizar perante a página, e caso ocorra algum problema possa contorna-lo
+        se possível.
+
+    2. Estrutura
+        A estrutura foi idealizada em 4 passos:
+            Actions, Book, Configs e Elements.
+
+    3. Actions
+        Na pasta Action do módulo, deve se localizaar os scripts responsáveis pela tomada de ações, inserir dados,
+        alterar a página, verificar dados da página.
+        Entenda-o como o "Controller" de um projeto MVC.
+
+    4. Book
+        Na pasta Book do módulo, deve se localizar as variáveis que contenham ids, classes, xpaths de elementos que
+        algum script da pasta "Actions" deva encontrar, no Book também devem haver strings cuja necessitem ser
+        completadas com algum tipo de informação, como uma URL que precise da id de um post, página ou pessoa.
+
+    5. Configs
+        Na pasta Configs do módulo, deve se localizar os arquivos contendo constantes que possam ser usadas em todo o
+        módulo, geralmente são links.
+
+    6. Elements
+        Na pasta Elements do módulo, deve se localizar os scripts responsáveis por encontrar elementos específicos na
+        página (com auxilio do Book), ele deve localizar e retorna-los para que o "Actions" possa utiliza-lo.
+        Ps.: É recomendado que todas funções localizadas nesta pasta retornem apenas "Web Elements".
+
+    7. Finalizando
+        Tendo esta estrutura, temos um módulo completo para começar a interagir com uma página na Web, inserindo e
+        obtendo dados.
