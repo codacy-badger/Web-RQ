@@ -8,6 +8,9 @@ class ExceptionGeo(Exception):
 
 
 class Geo(object):
+    """
+    # = > Classe com todas regiões disponíveis no Explore.
+    """
     __metaclass__ = ABCMeta
     __api_url = "https://trends.google.com.br/trends/api/explore/pickers/geo"
     __language = "pt-BR"
@@ -18,11 +21,14 @@ class Geo(object):
     @property
     @abstractmethod
     def locales(self) -> dict:
+
         if not self.__geo_locales:
+            # = > Se não existirem locais setados, vamos requisita-los.
 
             import requests
             from modules.web_tools.google_trends.tools.url_setter import UrlSetter
 
+            # Montamos a URL.
             url = UrlSetter.gen_url(self.__api, self.__params)
             response = requests.get(url)
 

@@ -8,6 +8,9 @@ class ExceptionCategories(Exception):
 
 
 class Categories(object):
+    """
+    # = > Classe para obtenção das categorias disponíveis no explore.
+    """
     __metaclass__ = ABCMeta
     __api_url = "https://trends.google.com.br/trends/api/explore/pickers/category"
 
@@ -19,11 +22,18 @@ class Categories(object):
     @property
     @abstractmethod
     def categories(self) -> dict:
+        """
+        # = > Dict com categorias disponíveis.
+        :return: dict
+        """
+
         if not self.__categories:
+            # = > Se as categorias não estiverem setadas, então faremos a requisição.
 
             import requests
             from modules.web_tools.google_trends.tools.url_setter import UrlSetter
 
+            # = > Construindo URL de acesso.
             url = UrlSetter.gen_url(self.__api, self.__params)
             response = requests.get(url)
 

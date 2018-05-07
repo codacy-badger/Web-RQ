@@ -4,6 +4,9 @@ from abc import ABCMeta, abstractmethod
 
 
 class Fix(object):
+    """
+    # = > Classe para corrigir dados.
+    """
     __metaclass__ = ABCMeta
 
     @staticmethod

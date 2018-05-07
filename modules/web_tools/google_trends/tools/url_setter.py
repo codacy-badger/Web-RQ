@@ -1,10 +1,14 @@
 #!/usr/bin/env python3.6
 # -*- coding: utf-8 -*-
 class UrlSetter(object):
+    """
+    # = > Classe para a construção de URL's.
+    """
 
     @staticmethod
     def gen_url(base_url: str, params: dict) -> str:
         from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
+
         components = urlparse(base_url)
 
         query_pairs = parse_qsl(components.query)
