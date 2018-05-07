@@ -67,7 +67,7 @@ class AbstractLatest(object):
     @category.setter
     @abstractmethod
     def category(self, category: str):
-        self.category = category
+        self.__category = category
 
     @property
     @abstractmethod
