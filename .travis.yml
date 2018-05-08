@@ -16,7 +16,7 @@ before_script:
 
 script:
   - python pytest.py
-  - python -m nose.core --tests "pytest.py" --cover-package=*.py --with-coverage $1
+  - nosetests -w / --with-coverage
 
 after_success:
   - bash < (curl -s https://codecov.io/bash)
