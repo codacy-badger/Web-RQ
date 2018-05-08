@@ -7,3 +7,5 @@ python:
 
 script:
   - pytest.py
+  
+sudo: required
