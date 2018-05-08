@@ -15,9 +15,9 @@ before_script:
 
 script:
   - python pytest.py
-  - coverage run pytest.py
+  - nosetts pytest.py —with-coverage
 
 sudo: true
 
 after_success:
-  - codecov
+  - bash < (curl -s https://codecov.io/bash)
