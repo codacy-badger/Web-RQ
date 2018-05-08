@@ -6,6 +6,6 @@ python:
   - "3.6"
 
 script:
-  - pytest.py
-  
+  - python pytest.py
+
 sudo: required
