@@ -7,12 +7,12 @@ cache:
   - pip
 
 before_script:
-  - pip install --user git+https://github.com/mobolic/facebook-sdk.git#egg=facebook-sdk
-  - pip install --user selenium
-  - pip install --user requests
-  - pip install --user coverage
-  - pip install --user codecov
-  - pip install --user nose
+  - pip install -e git+https://github.com/mobolic/facebook-sdk.git#egg=facebook-sdk
+  - pip install selenium
+  - pip install requests
+  - pip install coverage
+  - pip install codecov
+  - pip install nose
 
 script:
   - python pytest.py
