@@ -14,12 +14,10 @@ before_script:
   - export CODECOV_TOKEN="a225c7c2-6b05-4677-b300-3c3e85a64699"
 
 script:
-  - coverage run pytest.py
-  - codecov
   - python pytest.py
+  - coverage run pytest.py
 
 sudo: true
 
 after_success:
   - codecov
-  - bash < (curl -s https://codecov.io/bash)
