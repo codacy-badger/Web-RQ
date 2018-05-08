@@ -16,7 +16,7 @@ before_script:
 
 script:
   - python pytest.py
-  - nosetests "pytest.py" -v —-with-coverage
+  - nosetests -v —-with-coverage --cover-package=*.py
 
 sudo: true
 
