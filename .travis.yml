@@ -7,7 +7,7 @@ cache:
   - pip
 
 before_script:
-  - pip install --user -e git+https://github.com/mobolic/facebook-sdk.git#egg=facebook-sdk
+  - pip install --user git+https://github.com/mobolic/facebook-sdk.git#egg=facebook-sdk
   - pip install --user selenium
   - pip install --user requests
   - pip install --user coverage
