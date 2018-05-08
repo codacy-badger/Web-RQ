@@ -13,6 +13,7 @@ before_script:
   - pip install coverage
   - pip install codecov
   - pip install nose
+  - pip install codacy-coverage
 
 script:
   - python pytest.py
@@ -21,5 +22,7 @@ script:
 
 after_success:
   - coverage html
+  - coverage xml
   - cat codecov.yml | curl --data-binary @- https://codecov.io/validate
   - codecov
+  - python-codacy-coverage -r coverage.xml
