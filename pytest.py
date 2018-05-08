@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Packages Update Test
+print("===DOWNLOAD DE PACOTES===")
 from code_test import packages_check
 
 from modules.web_tools.google_trends.explore.request import ExploreRequest
