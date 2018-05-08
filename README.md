@@ -1,4 +1,5 @@
 # Welcome to Web RQ!
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/aaaaa796d2d24022adb3a0986fd29a36)](https://www.codacy.com/app/rique_dev/Web-RQ?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=backtobasicsdatabrazil/Web-RQ&amp;utm_campaign=Badge_Grade)
 
 
 Hello, thank you for being interested in my "**Web RQ**" package. With this tool you can get data from sites like Facebook & Google Trends without much effort, as long as we have the module, of course.
