@@ -16,7 +16,7 @@ before_script:
 
 script:
   - python pytest.py
-  - nosetts pytest.py —with-coverage
+  - nosetests pytest.py —with-coverage
 
 sudo: true
 
