@@ -2,11 +2,19 @@ language: python
 python:
   - "3.6"
 
+cache:
+  - pip
+
 before_script:
   - pip install -e git+https://github.com/mobolic/facebook-sdk.git#egg=facebook-sdk
   - pip install selenium
   - pip install requests
 script:
+  - coverage run pytest.py
+  - codecov
   - python pytest.py
 
 sudo: true
+
+after_success:
+  - codecov
