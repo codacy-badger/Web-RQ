@@ -5,7 +5,11 @@ python:
   - "3.5"
   - "3.6"
 
+before_script:
+  - pip install -e git+https://github.com/mobolic/facebook-sdk.git#egg=facebook-sdk
+  - pip install selenium
+  - pip install requests
 script:
   - python pytest.py
 
-sudo: required
+sudo: true
