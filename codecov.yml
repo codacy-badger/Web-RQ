@@ -1,15 +1,2 @@
-odecov:
- notify:
- require_ci_to_pass: yes
-coverage:
- precision: 2
- round: down
- range: “70…100”
-status:
- project: yes
- patch: yes
- changes: no
-comment:
- layout: “reach, diff, flags, files, footer”
- behavior: default
- require_changes: no
+codecov:
+  token: a225c7c2-6b05-4677-b300-3c3e85a64699
